@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="175.476">
+    <testcase classname="User could register with a new account" name="User can create new account using valid credentials" time="10.37">
+        <system-out><![CDATA[Given User navigate to Register Page........................................passed
+And User selects a gender Type "Male".......................................passed
+And User Enters Firstname "Abdulrahman" and Lastname "Ayman"................passed
+And User Select His date of birth Day "1" Month "10" Year "1997"............passed
+And User Enters Email Address "Test1@example.com"...........................passed
+And User fills Password fields "Password123" "Password123"..................passed
+When User Clicks on Register Button.........................................passed
+Then User directed to successful register page "https://demo.nopcommerce.com/registerresult/1?returnUrl=/".passed
+And A success Message is displayed "Your registration completed"............passed
+And The color of Success Message should be "rgba(76, 177, 124, 1)"..........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User should be able to Login to his account" name="User could Login Using Valid Credentials" time="5.021">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test1@example.com"...................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Then User should be directed to Home Page "https://demo.nopcommerce.com/"...passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User can switch between currencies" name="User can Select Euro Currency For shopping" time="8.933">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Selects "Euro" Currency from Dropdown list........................passed
+Then Prices of Displayed products should be in "€" Currency.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User can switch between currencies" name="User can Select Euro Currency For shopping 2" time="7.669">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Selects "US Dollar" Currency from Dropdown list...................passed
+Then Prices of Displayed products should be in "$" Currency.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using Product name" time="7.979">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User clicks on Search box.............................................passed
+And User enter a product name as "book" to search for.......................passed
+When User Clicks on Search Button...........................................passed
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..passed
+And User could find relative products to the product name "book"............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using Product name 2" time="8.141">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User clicks on Search box.............................................passed
+And User enter a product name as "Apple" to search for......................passed
+When User Clicks on Search Button...........................................passed
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..passed
+And User could find relative products to the product name "Apple"...........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using Product name 3" time="8.543">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User clicks on Search box.............................................passed
+And User enter a product name as "Cam" to search for........................passed
+When User Clicks on Search Button...........................................passed
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..passed
+And User could find relative products to the product name "Cam".............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using SKU" time="12.852">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User clicks on Search box.............................................passed
+And User enter a product name as "SCI_FAITH" to search for..................passed
+When User Clicks on Search Button...........................................passed
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..passed
+And User could find the corresponding product to the entered SKU "SCI_FAITH".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using SKU 2" time="29.228">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User clicks on Search box.............................................passed
+And User enter a product name as "APPLE_CAM" to search for..................passed
+When User Clicks on Search Button...........................................passed
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..passed
+And User could find the corresponding product to the entered SKU "APPLE_CAM".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using SKU 3" time="11.394">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User clicks on Search box.............................................passed
+And User enter a product name as "SF_PRO_11" to search for..................passed
+When User Clicks on Search Button...........................................passed
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..passed
+And User could find the corresponding product to the entered SKU "SF_PRO_11".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User can hover to different categories and select sub categories" name="User can hover to computer category and select Desktops sub-category" time="7.39">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Hovers to Computer Category.......................................passed
+And User Selects Desktops sub-category......................................passed
+Then User should be directed to sub-category page "https://demo.nopcommerce.com/desktops".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could navigate between sliders" name="User could select a slider and navigate to the product page in the slider" time="5.271">
+        <failure message="User doesn't Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Select Slider "0".................................................passed
+And User Clicks on the product Link in the Slider "0".......................passed
+Then User should be directed to the product page "https://demo.nopcommerce.com/nokia-lumia-1020".failed
+
+StackTrace:
+java.lang.AssertionError: User doesn't Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page "https://demo.nopcommerce.com/nokia-lumia-1020"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+]]></failure>
+    </testcase>
+    <testcase classname="User could navigate between sliders" name="User could select a slider and navigate to the product page in the slider 2" time="4.984">
+        <failure message="User doesn't Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Select Slider "1".................................................passed
+And User Clicks on the product Link in the Slider "1".......................passed
+Then User should be directed to the product page "https://demo.nopcommerce.com/iphone-6".failed
+
+StackTrace:
+java.lang.AssertionError: User doesn't Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page "https://demo.nopcommerce.com/iphone-6"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+]]></failure>
+    </testcase>
+    <testcase classname="User could follow website accounts int follow us section" name="User could navigate to networks Links of the Website (Facebook , Twitter , ... )" time="9.117">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Scroll down to follow Us section and Click on "facebook" Icon.....passed
+Then User should be directed to Network Page "https://www.facebook.com/nopCommerce".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could follow website accounts int follow us section" name="User could navigate to networks Links of the Website (Facebook , Twitter , ... ) 2" time="8.194">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Scroll down to follow Us section and Click on "twitter" Icon......passed
+Then User should be directed to Network Page "https://twitter.com/nopCommerce".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could follow website accounts int follow us section" name="User could navigate to networks Links of the Website (Facebook , Twitter , ... ) 3" time="8.168">
+        <failure message="User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Scroll down to follow Us section and Click on "rss" Icon..........passed
+Then User should be directed to Network Page "https://demo.nopcommerce.com/new-online-store-is-open".failed
+
+StackTrace:
+java.lang.AssertionError: User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD07_FollowUs.Direct_Network_Page(SD07_FollowUs.java:35)
+	at ✽.User should be directed to Network Page "https://demo.nopcommerce.com/new-online-store-is-open"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F07_FollowUs.feature:18)
+]]></failure>
+    </testcase>
+    <testcase classname="User could follow website accounts int follow us section" name="User could navigate to networks Links of the Website (Facebook , Twitter , ... ) 4" time="8.134">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Scroll down to follow Us section and Click on "youtube" Icon......passed
+Then User should be directed to Network Page "https://www.youtube.com/user/nopCommerce".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could add products to Wish List" name="A success Message Appears when user Add product to wish list" time="5.735">
+        <system-out><![CDATA[Given User Navigates to Home Page...........................................passed
+When User Clicks on WishList button of product number "2"...................passed
+Then A success Message is displayed to inform user that Product has been added to WishList.passed
+And The color of WishList Success Message should be "#4bb07a"...............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could add products to Wish List" name="Quantity of the product increases after adding product to wish list" time="7.927">
+        <system-out><![CDATA[Given User Navigates to Home Page...........................................passed
+When User Clicks on WishList button of product number "2"...................passed
+And User Navigates to wish list page........................................passed
+Then Quantity of the product should be increased in wish list page..........passed
+]]></system-out>
+    </testcase>
+</testsuite>

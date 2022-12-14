@@ -1,0 +1,218 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 17 03:05:50 EET 2022</td>
+</tr>
+<tr><td>Total time:</td><td>176 seconds (176228 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User could navigate to networks Links of the Website (Facebook , Twitter , ... )", "Optional[User could follow website accounts int follow us section]"</td>
+<td><div><pre>java.lang.AssertionError: User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.example.StepDefinition.SD07_FollowUs.Direct_Network_Page(SD07_FollowUs.java:35)
+	at ✽.User should be directed to Network Page &quot;https://demo.nopcommerce.com/new-online-store-is-open&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F07_FollowUs.feature:18)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1771486148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1771486148'><pre>java.lang.AssertionError: User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD07_FollowUs.Direct_Network_Page(SD07_FollowUs.java:35)
+	at ✽.User should be directed to Network Page &quot;https://demo.nopcommerce.com/new-online-store-is-open&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F07_FollowUs.feature:18)
+</pre></div></td>
+<td>8</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User could select a slider and navigate to the product page in the slider", "Optional[User could navigate between sliders]"</td>
+<td><div><pre>java.lang.AssertionError: User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page &quot;https://demo.nopcommerce.com/iphone-6&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace739665788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace739665788'><pre>java.lang.AssertionError: User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page &quot;https://demo.nopcommerce.com/iphone-6&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+</pre></div></td>
+<td>4</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User could select a slider and navigate to the product page in the slider", "Optional[User could navigate between sliders]"</td>
+<td><div><pre>java.lang.AssertionError: User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page &quot;https://demo.nopcommerce.com/nokia-lumia-1020&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace920320548", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace920320548'><pre>java.lang.AssertionError: User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page &quot;https://demo.nopcommerce.com/nokia-lumia-1020&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+</pre></div></td>
+<td>5</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can Select Euro Currency For shopping", "Optional[User can switch between currencies]"</td>
+<td></td>
+<td>8</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Could search for Products using Product name", "Optional[User could search for products in search box]"</td>
+<td></td>
+<td>7</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User could navigate to networks Links of the Website (Facebook , Twitter , ... )", "Optional[User could follow website accounts int follow us section]"</td>
+<td></td>
+<td>8</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Quantity of the product increases after adding product to wish list", "Optional[User could add products to Wish List]"</td>
+<td></td>
+<td>7</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can hover to computer category and select Desktops sub-category", "Optional[User can hover to different categories and select sub categories]"</td>
+<td></td>
+<td>7</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User could navigate to networks Links of the Website (Facebook , Twitter , ... )", "Optional[User could follow website accounts int follow us section]"</td>
+<td></td>
+<td>9</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can create new account using valid credentials", "Optional[User could register with a new account]"</td>
+<td></td>
+<td>10</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Could search for Products using SKU", "Optional[User could search for products in search box]"</td>
+<td></td>
+<td>29</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User could Login Using Valid Credentials", "Optional[User should be able to Login to his account]"</td>
+<td></td>
+<td>5</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Could search for Products using SKU", "Optional[User could search for products in search box]"</td>
+<td></td>
+<td>11</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Could search for Products using Product name", "Optional[User could search for products in search box]"</td>
+<td></td>
+<td>8</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can Select Euro Currency For shopping", "Optional[User can switch between currencies]"</td>
+<td></td>
+<td>7</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User could navigate to networks Links of the Website (Facebook , Twitter , ... )", "Optional[User could follow website accounts int follow us section]"</td>
+<td></td>
+<td>8</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Could search for Products using SKU", "Optional[User could search for products in search box]"</td>
+<td></td>
+<td>12</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A success Message Appears when user Add product to wish list", "Optional[User could add products to Wish List]"</td>
+<td></td>
+<td>5</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+<tr>
+<td title='org.example.Runner.testRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.Runner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Could search for Products using Product name", "Optional[User could search for products in search box]"</td>
+<td></td>
+<td>8</td>
+<td>org.example.Runner.testRunner@8e0379d</td></tr>
+</table><p>
+</body>
+</html>

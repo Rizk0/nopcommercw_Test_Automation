@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="19" failures="3" name="org.example.Runner.testRunner" time="175.311" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2021.3.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="18+36-2087"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\New folder\E-Commerce_Automation"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\New folder\E-Commerce_Automation"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="18+36-2087"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ABDULR~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_333\bin;C:\Program Files\Java\jdk-18\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\Java\jdk-13.0.2\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\plugins\maven\lib\apache-maven-3.8.5\bin;C:\Users\Abdulrahman\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\Abdulrahman\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\bin;;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="62.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Abdulrahman"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="user.name" value="Abdulrahman"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.3.3 verify"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-18"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="18"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-03-22"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="10.482"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="5.032"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="8.945"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="7.68"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="7.989"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="8.153"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="8.55"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="12.863"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="29.237"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="11.398"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="7.395"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="5.285">
+    <failure message="User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError">java.lang.AssertionError: User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page &quot;https://demo.nopcommerce.com/nokia-lumia-1020&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+</failure>
+    <system-out>
+@Smoke
+Scenario Outline: User could select a slider and navigate to the product page in the slider        &amp;#27;[90m# src/main/resources/Features/F06_Slider.feature:24&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser navigate to Login Page&amp;#27;[0m                                                                &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Navigate_Login_Page()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser Enters a valid Email address &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTest@example.com&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                         &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Email(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser Enters a valid Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPassword123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                   &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Password(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser Clicks on Login Button&amp;#27;[0m                                                                 &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Click_Login_Button()&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser Navigates to Home Page&amp;#27;[0m                                                                &amp;#27;[90m# org.example.StepDefinition.SD03_Switch_Currency.Navigate_Home_Page()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser Select Slider &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m0&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                      &amp;#27;[90m# org.example.StepDefinition.SD06_Slider.Select_Slider(int)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser Clicks on the product Link in the Slider &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m0&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                            &amp;#27;[90m# org.example.StepDefinition.SD06_Slider.Click_productLink(int)&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mUser should be directed to the product page &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1mhttps://demo.nopcommerce.com/nokia-lumia-1020&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m &amp;#27;[90m# org.example.StepDefinition.SD06_Slider.Direct_product_Page(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page &quot;https://demo.nopcommerce.com/nokia-lumia-1020&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 50430
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 17, 2022 3:07:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 17, 2022 3:07:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+Jun 17, 2022 3:07:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+</system-err>
+  </testcase>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="4.992">
+    <failure message="User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError">java.lang.AssertionError: User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page &quot;https://demo.nopcommerce.com/iphone-6&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+</failure>
+    <system-out>
+@Smoke
+Scenario Outline: User could select a slider and navigate to the product page in the slider &amp;#27;[90m# src/main/resources/Features/F06_Slider.feature:25&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser navigate to Login Page&amp;#27;[0m                                                         &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Navigate_Login_Page()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser Enters a valid Email address &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTest@example.com&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                  &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Email(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser Enters a valid Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPassword123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                            &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Password(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser Clicks on Login Button&amp;#27;[0m                                                          &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Click_Login_Button()&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser Navigates to Home Page&amp;#27;[0m                                                         &amp;#27;[90m# org.example.StepDefinition.SD03_Switch_Currency.Navigate_Home_Page()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser Select Slider &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                               &amp;#27;[90m# org.example.StepDefinition.SD06_Slider.Select_Slider(int)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser Clicks on the product Link in the Slider &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                     &amp;#27;[90m# org.example.StepDefinition.SD06_Slider.Click_productLink(int)&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mUser should be directed to the product page &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1mhttps://demo.nopcommerce.com/iphone-6&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m  &amp;#27;[90m# org.example.StepDefinition.SD06_Slider.Direct_product_Page(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page &quot;https://demo.nopcommerce.com/iphone-6&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 54944
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 17, 2022 3:07:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 17, 2022 3:07:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+Jun 17, 2022 3:07:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+</system-err>
+  </testcase>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="9.123"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="8.2"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="8.173">
+    <failure message="User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError">java.lang.AssertionError: User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD07_FollowUs.Direct_Network_Page(SD07_FollowUs.java:35)
+	at ✽.User should be directed to Network Page &quot;https://demo.nopcommerce.com/new-online-store-is-open&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F07_FollowUs.feature:18)
+</failure>
+    <system-out>
+@Smoke
+Scenario Outline: User could navigate to networks Links of the Website (Facebook , Twitter , ... )     &amp;#27;[90m# src/main/resources/Features/F07_FollowUs.feature:24&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser navigate to Login Page&amp;#27;[0m                                                                    &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Navigate_Login_Page()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser Enters a valid Email address &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTest@example.com&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                             &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Email(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser Enters a valid Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPassword123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                       &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Password(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser Clicks on Login Button&amp;#27;[0m                                                                     &amp;#27;[90m# org.example.StepDefinition.SD02_Login.Click_Login_Button()&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser Navigates to Home Page&amp;#27;[0m                                                                    &amp;#27;[90m# org.example.StepDefinition.SD03_Switch_Currency.Navigate_Home_Page()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser Scroll down to follow Us section and Click on &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mrss&amp;#27;[0m&amp;#27;[32m&quot; Icon&amp;#27;[0m                                   &amp;#27;[90m# org.example.StepDefinition.SD07_FollowUs.Click_Network_Icon(java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mUser should be directed to Network Page &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1mhttps://demo.nopcommerce.com/new-online-store-is-open&amp;#27;[0m&amp;#27;[31m&quot;&amp;#27;[0m &amp;#27;[90m# org.example.StepDefinition.SD07_FollowUs.Direct_Network_Page(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD07_FollowUs.Direct_Network_Page(SD07_FollowUs.java:35)
+	at ✽.User should be directed to Network Page &quot;https://demo.nopcommerce.com/new-online-store-is-open&quot;(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F07_FollowUs.feature:18)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 62883
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 17, 2022 3:08:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 17, 2022 3:08:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+Jun 17, 2022 3:08:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+</system-err>
+  </testcase>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="8.137"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="5.742"/>
+  <testcase classname="org.example.Runner.testRunner" name="runScenario" time="7.935"/>
+</testsuite>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.Runner.Runner" time="249.451" tests="19" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="idea.version" value="2021.3.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="18+36-2087"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\New folder\E-Commerce_Automation"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\New folder\E-Commerce_Automation"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="18+36-2087"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ABDULR~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_333\bin;C:\Program Files\Java\jdk-18\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\Java\jdk-13.0.2\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\plugins\maven\lib\apache-maven-3.8.5\bin;C:\Users\Abdulrahman\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\Abdulrahman\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\bin;;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="62.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Abdulrahman"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="user.name" value="Abdulrahman"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.3.3 verify"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-18"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="18"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-03-22"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="8.623">
+    <failure message="The following asserts failed:&#10;	expected [https://demo.nopcommerce.com/registerresult/1?returnUrl=/] but found [https://demo.nopcommerce.com/register?returnurl=%2F]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	expected [https://demo.nopcommerce.com/registerresult/1?returnUrl=/] but found [https://demo.nopcommerce.com/register?returnurl=%2F]
+</failure>
+    <system-out><![CDATA[
+@Smoke
+Scenario: User can create new account using valid credentials                                                &amp#27;[90m# src/main/resources/Features/F01_Registration.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser navigate to Register Page&amp#27;[0m                                                                       &amp#27;[90m# org.example.StepDefinition.SD01_Registration.Navigate_Register_Page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser selects a gender Type "&amp#27;[0m&amp#27;[32m&amp#27;[1mMale&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                                                      &amp#27;[90m# org.example.StepDefinition.SD01_Registration.Select_Gender(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Enters Firstname "&amp#27;[0m&amp#27;[32m&amp#27;[1mAbdulrahman&amp#27;[0m&amp#27;[32m" and Lastname "&amp#27;[0m&amp#27;[32m&amp#27;[1mAyman&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                               &amp#27;[90m# org.example.StepDefinition.SD01_Registration.Enter_First_Last_name(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Select His date of birth Day "&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m" Month "&amp#27;[0m&amp#27;[32m&amp#27;[1m10&amp#27;[0m&amp#27;[32m" Year "&amp#27;[0m&amp#27;[32m&amp#27;[1m1997&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                           &amp#27;[90m# org.example.StepDefinition.SD01_Registration.Select_DateOfBirth(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Enters Email Address "&amp#27;[0m&amp#27;[32m&amp#27;[1mTest@example.com&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                                           &amp#27;[90m# org.example.StepDefinition.SD01_Registration.Enter_Email_Address(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser fills Password fields "&amp#27;[0m&amp#27;[32m&amp#27;[1mPassword123&amp#27;[0m&amp#27;[32m" "&amp#27;[0m&amp#27;[32m&amp#27;[1mPassword123&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                                 &amp#27;[90m# org.example.StepDefinition.SD01_Registration.Fill_Password_Fields(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Clicks on Register Button&amp#27;[0m                                                                        &amp#27;[90m# org.example.StepDefinition.SD01_Registration.Click_Register_Button()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mUser directed to successful register page "&amp#27;[0m&amp#27;[31m&amp#27;[1mhttps://demo.nopcommerce.com/registerresult/1?returnUrl=/&amp#27;[0m&amp#27;[31m"&amp#27;[0m &amp#27;[90m# org.example.StepDefinition.SD01_Registration.Direct_to_Register_Successful_Page(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: The following asserts failed:
+	expected [https://demo.nopcommerce.com/registerresult/1?returnUrl=/] but found [https://demo.nopcommerce.com/register?returnurl=%2F]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at org.example.StepDefinition.SD01_Registration.Direct_to_Register_Successful_Page(SD01_Registration.java:74)
+	at ✽.User directed to successful register page "https://demo.nopcommerce.com/registerresult/1?returnUrl=/"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F01_Registration.feature:12)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mA success Message is displayed "&amp#27;[0m&amp#27;[36m&amp#27;[1mYour registration completed&amp#27;[0m&amp#27;[36m"&amp#27;[0m                                           &amp#27;[90m# org.example.StepDefinition.SD01_Registration.Success_Message(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe color of Success Message should be "&amp#27;[0m&amp#27;[36m&amp#27;[1mrgba(76, 177, 124, 1)&amp#27;[0m&amp#27;[36m"&amp#27;[0m                                         &amp#27;[90m# org.example.StepDefinition.SD01_Registration.Success_Message_Color(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 62851
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 15, 2022 7:45:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 15, 2022 7:45:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+Jun 15, 2022 7:45:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="12.375">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[class=&quot;ico-account&quot;]&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;DESKTOP-LVVDLDS&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8ef5a9ff941d4bb59f63e20c221da4c6, findElement {using=css selector, value=a[class=&quot;ico-account&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8ef5a9ff941d4bb59f63e20c221da4c6" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"a[class="ico-account"]"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-LVVDLDS', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ef5a9ff941d4bb59f63e20c221da4c6, findElement {using=css selector, value=a[class="ico-account"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ef5a9ff941d4bb59f63e20c221da4c6
+</failure>
+    <system-out><![CDATA[
+@Smoke
+Scenario: User could Login Using Valid Credentials                          &amp#27;[90m# src/main/resources/Features/F02_Login.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser navigate to Login Page&amp#27;[0m                                         &amp#27;[90m# org.example.StepDefinition.SD02_Login.Navigate_Login_Page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Enters a valid Email address "&amp#27;[0m&amp#27;[32m&amp#27;[1mTest@example.com&amp#27;[0m&amp#27;[32m"&amp#27;[0m                  &amp#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Email(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Enters a valid Password "&amp#27;[0m&amp#27;[32m&amp#27;[1mPassword123&amp#27;[0m&amp#27;[32m"&amp#27;[0m                            &amp#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Clicks on Login Button&amp#27;[0m                                          &amp#27;[90m# org.example.StepDefinition.SD02_Login.Click_Login_Button()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mUser should be directed to Home Page "&amp#27;[0m&amp#27;[31m&amp#27;[1mhttps://demo.nopcommerce.com/&amp#27;[0m&amp#27;[31m"&amp#27;[0m &amp#27;[90m# org.example.StepDefinition.SD02_Login.Login_To_Account_Success(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[class="ico-account"]"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-LVVDLDS', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ef5a9ff941d4bb59f63e20c221da4c6, findElement {using=css selector, value=a[class="ico-account"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ef5a9ff941d4bb59f63e20c221da4c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.example.Pages.P02_Login.myAccount_Tab(P02_Login.java:40)
+	at org.example.StepDefinition.SD02_Login.Login_To_Account_Success(SD02_Login.java:46)
+	at ✽.User should be directed to Home Page "https://demo.nopcommerce.com/"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F02_Login.feature:10)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 55614
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 15, 2022 7:45:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 15, 2022 7:45:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+Jun 15, 2022 7:45:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="7.66"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="7.453"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="8.385"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="104.86">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;DESKTOP-LVVDLDS&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a357af5f51226ae19a3b96e4805165d9, findElement {using=css selector, value=a[class=&quot;ico-login&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53386/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a357af5f51226ae19a3b96e4805165d9" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-LVVDLDS', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a357af5f51226ae19a3b96e4805165d9, findElement {using=css selector, value=a[class="ico-login"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53386/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a357af5f51226ae19a3b96e4805165d9
+</failure>
+    <system-out><![CDATA[
+@Smoke
+Scenario Outline: User Could search for Products using Product name          &amp#27;[90m# src/main/resources/Features/F04_Search.feature:26&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mUser navigate to Login Page&amp#27;[0m                                          &amp#27;[90m# org.example.StepDefinition.SD02_Login.Navigate_Login_Page()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-LVVDLDS', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a357af5f51226ae19a3b96e4805165d9, findElement {using=css selector, value=a[class="ico-login"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53386/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a357af5f51226ae19a3b96e4805165d9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.example.Pages.P02_Login.Login_Link(P02_Login.java:12)
+	at org.example.StepDefinition.SD02_Login.Navigate_Login_Page(SD02_Login.java:17)
+	at ✽.User navigate to Login Page(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F04_Search.feature:6)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser Enters a valid Email address "&amp#27;[0m&amp#27;[36m&amp#27;[1mTest@example.com&amp#27;[0m&amp#27;[36m"&amp#27;[0m                   &amp#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Email(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser Enters a valid Password "&amp#27;[0m&amp#27;[36m&amp#27;[1mPassword123&amp#27;[0m&amp#27;[36m"&amp#27;[0m                             &amp#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Password(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser Clicks on Login Button&amp#27;[0m                                           &amp#27;[90m# org.example.StepDefinition.SD02_Login.Click_Login_Button()&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser clicks on Search box&amp#27;[0m                                            &amp#27;[90m# org.example.StepDefinition.SD03_Search.Click_Search_Box()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser enter a product name as "&amp#27;[0m&amp#27;[36m&amp#27;[1mApple&amp#27;[0m&amp#27;[36m" to search for&amp#27;[0m                     &amp#27;[90m# org.example.StepDefinition.SD03_Search.Enter_Product_name(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser Clicks on Search Button&amp#27;[0m                                          &amp#27;[90m# org.example.StepDefinition.SD03_Search.Click_Search_Button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser directed to Search Page "&amp#27;[0m&amp#27;[36m&amp#27;[1mhttps://demo.nopcommerce.com/search?q=&amp#27;[0m&amp#27;[36m"&amp#27;[0m &amp#27;[90m# org.example.StepDefinition.SD03_Search.Direct_Search_Page(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser could find relative products to the product name "&amp#27;[0m&amp#27;[36m&amp#27;[1mApple&amp#27;[0m&amp#27;[36m"&amp#27;[0m          &amp#27;[90m# org.example.StepDefinition.SD03_Search.Search_Results(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 52667
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 15, 2022 7:45:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 15, 2022 7:45:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+Jun 15, 2022 7:45:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="7.467"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="9.279"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="9.377"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="9.567"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="7.043"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="4.767">
+    <failure message="User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError">java.lang.AssertionError: User doesn't Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+</failure>
+    <system-out><![CDATA[
+@Smoke
+Scenario Outline: User could select a slider and navigate to the product page in the slider        &amp#27;[90m# src/main/resources/Features/F06_Slider.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser navigate to Login Page&amp#27;[0m                                                                &amp#27;[90m# org.example.StepDefinition.SD02_Login.Navigate_Login_Page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Enters a valid Email address "&amp#27;[0m&amp#27;[32m&amp#27;[1mTest@example.com&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                         &amp#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Email(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Enters a valid Password "&amp#27;[0m&amp#27;[32m&amp#27;[1mPassword123&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                                   &amp#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Clicks on Login Button&amp#27;[0m                                                                 &amp#27;[90m# org.example.StepDefinition.SD02_Login.Click_Login_Button()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser Navigates to Home Page&amp#27;[0m                                                                &amp#27;[90m# org.example.StepDefinition.SD03_Switch_Currency.Navigate_Home_Page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Select Slider "&amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                                                      &amp#27;[90m# org.example.StepDefinition.SD06_Slider.Select_Slider(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Clicks on the product Link in the Slider "&amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                            &amp#27;[90m# org.example.StepDefinition.SD06_Slider.Click_productLink(int)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mUser should be directed to the product page "&amp#27;[0m&amp#27;[31m&amp#27;[1mhttps://demo.nopcommerce.com/nokia-lumia-1020&amp#27;[0m&amp#27;[31m"&amp#27;[0m &amp#27;[90m# org.example.StepDefinition.SD06_Slider.Direct_product_Page(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: User doesn't Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page "https://demo.nopcommerce.com/nokia-lumia-1020"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 61612
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 15, 2022 7:48:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 15, 2022 7:48:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+Jun 15, 2022 7:48:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="5.088">
+    <failure message="User doesn&apos;t Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError">java.lang.AssertionError: User doesn't Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+</failure>
+    <system-out><![CDATA[
+@Smoke
+Scenario Outline: User could select a slider and navigate to the product page in the slider &amp#27;[90m# src/main/resources/Features/F06_Slider.feature:25&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser navigate to Login Page&amp#27;[0m                                                         &amp#27;[90m# org.example.StepDefinition.SD02_Login.Navigate_Login_Page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Enters a valid Email address "&amp#27;[0m&amp#27;[32m&amp#27;[1mTest@example.com&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                  &amp#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Email(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Enters a valid Password "&amp#27;[0m&amp#27;[32m&amp#27;[1mPassword123&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                            &amp#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Clicks on Login Button&amp#27;[0m                                                          &amp#27;[90m# org.example.StepDefinition.SD02_Login.Click_Login_Button()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser Navigates to Home Page&amp#27;[0m                                                         &amp#27;[90m# org.example.StepDefinition.SD03_Switch_Currency.Navigate_Home_Page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Select Slider "&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                                               &amp#27;[90m# org.example.StepDefinition.SD06_Slider.Select_Slider(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Clicks on the product Link in the Slider "&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                     &amp#27;[90m# org.example.StepDefinition.SD06_Slider.Click_productLink(int)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mUser should be directed to the product page "&amp#27;[0m&amp#27;[31m&amp#27;[1mhttps://demo.nopcommerce.com/iphone-6&amp#27;[0m&amp#27;[31m"&amp#27;[0m  &amp#27;[90m# org.example.StepDefinition.SD06_Slider.Direct_product_Page(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: User doesn't Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page "https://demo.nopcommerce.com/iphone-6"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 52297
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 15, 2022 7:48:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 15, 2022 7:48:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+Jun 15, 2022 7:48:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="7.354"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="7.531"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="7.826">
+    <failure message="User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError">java.lang.AssertionError: User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+</failure>
+    <system-out><![CDATA[
+@Smoke
+Scenario Outline: User could navigate to networks Links of the Website (Facebook , Twitter , ... )     &amp#27;[90m# src/main/resources/Features/F07_FollowUs.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser navigate to Login Page&amp#27;[0m                                                                    &amp#27;[90m# org.example.StepDefinition.SD02_Login.Navigate_Login_Page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Enters a valid Email address "&amp#27;[0m&amp#27;[32m&amp#27;[1mTest@example.com&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                             &amp#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Email(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser Enters a valid Password "&amp#27;[0m&amp#27;[32m&amp#27;[1mPassword123&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                                       &amp#27;[90m# org.example.StepDefinition.SD02_Login.Enter_Valid_Password(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Clicks on Login Button&amp#27;[0m                                                                     &amp#27;[90m# org.example.StepDefinition.SD02_Login.Click_Login_Button()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser Navigates to Home Page&amp#27;[0m                                                                    &amp#27;[90m# org.example.StepDefinition.SD03_Switch_Currency.Navigate_Home_Page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser Scroll down to follow Us section and Click on "&amp#27;[0m&amp#27;[32m&amp#27;[1mrss&amp#27;[0m&amp#27;[32m" Icon&amp#27;[0m                                   &amp#27;[90m# org.example.StepDefinition.SD07_FollowUs.Click_Network_Icon(java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mUser should be directed to Network Page "&amp#27;[0m&amp#27;[31m&amp#27;[1mhttps://demo.nopcommerce.com/new-online-store-is-open&amp#27;[0m&amp#27;[31m"&amp#27;[0m &amp#27;[90m# org.example.StepDefinition.SD07_FollowUs.Direct_Network_Page(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD07_FollowUs.Direct_Network_Page(SD07_FollowUs.java:35)
+	at ✽.User should be directed to Network Page "https://demo.nopcommerce.com/new-online-store-is-open"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F07_FollowUs.feature:18)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 60743
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 15, 2022 7:48:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 15, 2022 7:48:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+Jun 15, 2022 7:48:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="8.971"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="5.792"/>
+  <testcase name="runScenario" classname="org.example.Runner.Runner" time="7.974"/>
+</testsuite>

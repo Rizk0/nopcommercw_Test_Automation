@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: org.example.Runner.Runner
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 249.451 sec <<< FAILURE! - in org.example.Runner.Runner
+runScenario(org.example.Runner.Runner)  Time elapsed: 8.623 sec  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [https://demo.nopcommerce.com/registerresult/1?returnUrl=/] but found [https://demo.nopcommerce.com/register?returnurl=%2F]
+
+runScenario(org.example.Runner.Runner)  Time elapsed: 12.375 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"a[class="ico-account"]"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-LVVDLDS', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ef5a9ff941d4bb59f63e20c221da4c6, findElement {using=css selector, value=a[class="ico-account"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ef5a9ff941d4bb59f63e20c221da4c6
+
+runScenario(org.example.Runner.Runner)  Time elapsed: 104.86 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-LVVDLDS', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a357af5f51226ae19a3b96e4805165d9, findElement {using=css selector, value=a[class="ico-login"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53386/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a357af5f51226ae19a3b96e4805165d9
+
+runScenario(org.example.Runner.Runner)  Time elapsed: 4.767 sec  <<< FAILURE!
+java.lang.AssertionError: User doesn't Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+
+runScenario(org.example.Runner.Runner)  Time elapsed: 5.088 sec  <<< FAILURE!
+java.lang.AssertionError: User doesn't Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+
+runScenario(org.example.Runner.Runner)  Time elapsed: 7.826 sec  <<< FAILURE!
+java.lang.AssertionError: User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+

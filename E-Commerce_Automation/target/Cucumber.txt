@@ -1,0 +1,5 @@
+file:src/main/resources/Features/F06_Slider.feature:24:25
+file:src/main/resources/Features/F02_Login.feature:4
+file:src/main/resources/Features/F01_Registration.feature:3
+file:src/main/resources/Features/F07_FollowUs.feature:24
+file:src/main/resources/Features/F04_Search.feature:26

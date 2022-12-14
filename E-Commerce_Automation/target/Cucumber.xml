@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="6" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="247.586">
+    <testcase classname="User could register with a new account" name="User can create new account using valid credentials" time="8.505">
+        <failure message="The following asserts failed:&#10;&#9;expected [https://demo.nopcommerce.com/registerresult/1?returnUrl=/] but found [https://demo.nopcommerce.com/register?returnurl=%2F]" type="java.lang.AssertionError"><![CDATA[Given User navigate to Register Page........................................passed
+And User selects a gender Type "Male".......................................passed
+And User Enters Firstname "Abdulrahman" and Lastname "Ayman"................passed
+And User Select His date of birth Day "1" Month "10" Year "1997"............passed
+And User Enters Email Address "Test@example.com"............................passed
+And User fills Password fields "Password123" "Password123"..................passed
+When User Clicks on Register Button.........................................passed
+Then User directed to successful register page "https://demo.nopcommerce.com/registerresult/1?returnUrl=/".failed
+And A success Message is displayed "Your registration completed"............skipped
+And The color of Success Message should be "rgba(76, 177, 124, 1)"..........skipped
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [https://demo.nopcommerce.com/registerresult/1?returnUrl=/] but found [https://demo.nopcommerce.com/register?returnurl=%2F]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at org.example.StepDefinition.SD01_Registration.Direct_to_Register_Successful_Page(SD01_Registration.java:74)
+	at ✽.User directed to successful register page "https://demo.nopcommerce.com/registerresult/1?returnUrl=/"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F01_Registration.feature:12)
+]]></failure>
+    </testcase>
+    <testcase classname="User should be able to Login to his account" name="User could Login Using Valid Credentials" time="12.34">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[class=&quot;ico-account&quot;]&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-LVVDLDS', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8ef5a9ff941d4bb59f63e20c221da4c6, findElement {using=css selector, value=a[class=&quot;ico-account&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8ef5a9ff941d4bb59f63e20c221da4c6" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Then User should be directed to Home Page "https://demo.nopcommerce.com/"...failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[class="ico-account"]"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-LVVDLDS', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ef5a9ff941d4bb59f63e20c221da4c6, findElement {using=css selector, value=a[class="ico-account"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53299/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ef5a9ff941d4bb59f63e20c221da4c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.example.Pages.P02_Login.myAccount_Tab(P02_Login.java:40)
+	at org.example.StepDefinition.SD02_Login.Login_To_Account_Success(SD02_Login.java:46)
+	at ✽.User should be directed to Home Page "https://demo.nopcommerce.com/"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F02_Login.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="User can switch between currencies" name="User can Select Euro Currency For shopping" time="7.651">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Selects "Euro" Currency from Dropdown list........................passed
+Then Prices of Displayed products should be in "€" Currency.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User can switch between currencies" name="User can Select Euro Currency For shopping 2" time="7.443">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Selects "US Dollar" Currency from Dropdown list...................passed
+Then Prices of Displayed products should be in "$" Currency.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using Product name" time="8.377">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User clicks on Search box.............................................passed
+And User enter a product name as "book" to search for.......................passed
+When User Clicks on Search Button...........................................passed
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..passed
+And User could find relative products to the product name "book"............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using Product name 2" time="104.847">
+        <failure message="chrome not reachable&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-LVVDLDS', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a357af5f51226ae19a3b96e4805165d9, findElement {using=css selector, value=a[class=&quot;ico-login&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53386/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a357af5f51226ae19a3b96e4805165d9" type="org.openqa.selenium.WebDriverException"><![CDATA[Given User navigate to Login Page...........................................failed
+And User Enters a valid Email address "Test@example.com"....................skipped
+And User Enters a valid Password "Password123"..............................skipped
+When User Clicks on Login Button............................................skipped
+Given User clicks on Search box.............................................skipped
+And User enter a product name as "Apple" to search for......................skipped
+When User Clicks on Search Button...........................................skipped
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..skipped
+And User could find relative products to the product name "Apple"...........skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-LVVDLDS', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a357af5f51226ae19a3b96e4805165d9, findElement {using=css selector, value=a[class="ico-login"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ABDULR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53386/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a357af5f51226ae19a3b96e4805165d9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.example.Pages.P02_Login.Login_Link(P02_Login.java:12)
+	at org.example.StepDefinition.SD02_Login.Navigate_Login_Page(SD02_Login.java:17)
+	at ✽.User navigate to Login Page(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F04_Search.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using Product name 3" time="7.453">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User clicks on Search box.............................................passed
+And User enter a product name as "Cam" to search for........................passed
+When User Clicks on Search Button...........................................passed
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..passed
+And User could find relative products to the product name "Cam".............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using SKU" time="9.272">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User clicks on Search box.............................................passed
+And User enter a product name as "SCI_FAITH" to search for..................passed
+When User Clicks on Search Button...........................................passed
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..passed
+And User could find the corresponding product to the entered SKU "SCI_FAITH".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using SKU 2" time="9.369">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User clicks on Search box.............................................passed
+And User enter a product name as "APPLE_CAM" to search for..................passed
+When User Clicks on Search Button...........................................passed
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..passed
+And User could find the corresponding product to the entered SKU "APPLE_CAM".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could search for products in search box" name="User Could search for Products using SKU 3" time="9.557">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User clicks on Search box.............................................passed
+And User enter a product name as "SF_PRO_11" to search for..................passed
+When User Clicks on Search Button...........................................passed
+Then User directed to Search Page "https://demo.nopcommerce.com/search?q="..passed
+And User could find the corresponding product to the entered SKU "SF_PRO_11".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User can hover to different categories and select sub categories" name="User can hover to computer category and select Desktops sub-category" time="7.037">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Hovers to Computer Category.......................................passed
+And User Selects Desktops sub-category......................................passed
+Then User should be directed to sub-category page "https://demo.nopcommerce.com/desktops".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could navigate between sliders" name="User could select a slider and navigate to the product page in the slider" time="4.762">
+        <failure message="User doesn't Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Select Slider "0".................................................passed
+And User Clicks on the product Link in the Slider "0".......................passed
+Then User should be directed to the product page "https://demo.nopcommerce.com/nokia-lumia-1020".failed
+
+StackTrace:
+java.lang.AssertionError: User doesn't Navigate to product page expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page "https://demo.nopcommerce.com/nokia-lumia-1020"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+]]></failure>
+    </testcase>
+    <testcase classname="User could navigate between sliders" name="User could select a slider and navigate to the product page in the slider 2" time="5.081">
+        <failure message="User doesn't Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Select Slider "1".................................................passed
+And User Clicks on the product Link in the Slider "1".......................passed
+Then User should be directed to the product page "https://demo.nopcommerce.com/iphone-6".failed
+
+StackTrace:
+java.lang.AssertionError: User doesn't Navigate to product page expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD06_Slider.Direct_product_Page(SD06_Slider.java:27)
+	at ✽.User should be directed to the product page "https://demo.nopcommerce.com/iphone-6"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F06_Slider.feature:20)
+]]></failure>
+    </testcase>
+    <testcase classname="User could follow website accounts int follow us section" name="User could navigate to networks Links of the Website (Facebook , Twitter , ... )" time="7.343">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Scroll down to follow Us section and Click on "facebook" Icon.....passed
+Then User should be directed to Network Page "https://www.facebook.com/nopCommerce".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could follow website accounts int follow us section" name="User could navigate to networks Links of the Website (Facebook , Twitter , ... ) 2" time="7.521">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Scroll down to follow Us section and Click on "twitter" Icon......passed
+Then User should be directed to Network Page "https://twitter.com/nopCommerce".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could follow website accounts int follow us section" name="User could navigate to networks Links of the Website (Facebook , Twitter , ... ) 3" time="7.817">
+        <failure message="User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Scroll down to follow Us section and Click on "rss" Icon..........passed
+Then User should be directed to Network Page "https://demo.nopcommerce.com/new-online-store-is-open".failed
+
+StackTrace:
+java.lang.AssertionError: User directed to the wrong page expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.example.StepDefinition.SD07_FollowUs.Direct_Network_Page(SD07_FollowUs.java:35)
+	at ✽.User should be directed to Network Page "https://demo.nopcommerce.com/new-online-store-is-open"(file:///C:/New%20folder/E-Commerce_Automation/src/main/resources/Features/F07_FollowUs.feature:18)
+]]></failure>
+    </testcase>
+    <testcase classname="User could follow website accounts int follow us section" name="User could navigate to networks Links of the Website (Facebook , Twitter , ... ) 4" time="8.964">
+        <system-out><![CDATA[Given User navigate to Login Page...........................................passed
+And User Enters a valid Email address "Test@example.com"....................passed
+And User Enters a valid Password "Password123"..............................passed
+When User Clicks on Login Button............................................passed
+Given User Navigates to Home Page...........................................passed
+When User Scroll down to follow Us section and Click on "youtube" Icon......passed
+Then User should be directed to Network Page "https://www.youtube.com/user/nopCommerce".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could add products to Wish List" name="A success Message Appears when user Add product to wish list" time="5.785">
+        <system-out><![CDATA[Given User Navigates to Home Page...........................................passed
+When User Clicks on WishList button of product number "2"...................passed
+Then A success Message is displayed to inform user that Product has been added to WishList.passed
+And The color of WishList Success Message should be "#4bb07a"...............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User could add products to Wish List" name="Quantity of the product increases after adding product to wish list" time="7.97">
+        <system-out><![CDATA[Given User Navigates to Home Page...........................................passed
+When User Clicks on WishList button of product number "2"...................passed
+And User Navigates to wish list page........................................passed
+Then Quantity of the product should be increased in wish list page..........passed
+]]></system-out>
+    </testcase>
+</testsuite>
